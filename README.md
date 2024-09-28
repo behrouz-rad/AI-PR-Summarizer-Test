@@ -17,4 +17,4 @@ The **AI-PR-Summarizer** is designed to streamline the code review process by pr
 - **Artifact Uploading**: Optionally upload review artifacts as part of the process for further auditing.
 
 ## Sample Pull Request
-A sample pull request is included in this repository to demonstrate how the AI-PR-Summarizer works. You can review the PR to see how the action automatically generates summaries and feedback based on the changes made.
+A [sample pull](https://github.com/behrouz-rad/AI-PR-Summarizer-Test/pull/1) request is included in this repository to demonstrate how the AI-PR-Summarizer works. You can review the PR to see how the action automatically generates summaries and feedback based on the changes made.
