@@ -16,5 +16,13 @@ The **AI-PR-Summarizer** is designed to streamline the code review process by pr
 - **Caching for Efficiency**: The action includes a versioning system to cache AI models, optimizing performance and reducing redundant fetches.
 - **Artifact Uploading**: Optionally upload review artifacts as part of the process for further auditing.
 
+## Files and Their Roles
+
+- `ollama-version.txt`: Any changes to this file invalidate the cache, triggering a fresh install of Ollama.
+- `ai-models.txt`: This file lists AI models (one per line) to be used for reviewing. Each model is fetched and cached, and if this file changes, the cache is invalidated, and models are downloaded again. For advanced use, a variety of AI models can be utilized with this action. You can find a complete list of models available for Ollama [here](https://ollama.com/library?sort=popular).
+  
+- `prompt1.txt`: A customizable prompt that instructs the AI to focus on both summarizing and reviewing the code changes. It offers a balance between providing a high-level summary and conducting a deeper review.
+- `prompt2.txt`: An alternative prompt that focuses solely on summarizing the code changes, providing concise, high-level overviews without detailed review feedback.
+- 
 ## Sample Pull Request
 A [sample pull](https://github.com/behrouz-rad/AI-PR-Summarizer-Test/pull/1) request is included in this repository to demonstrate how the AI-PR-Summarizer works. You can review the PR to see how the action automatically generates summaries and feedback based on the changes made.
